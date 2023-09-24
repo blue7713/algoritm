@@ -43,12 +43,12 @@ class Node:
     def next(self, node : 'Node') -> None:
         self._next = node
 
-    def __str__(self) -> str:
+    def __str__(self) -> str: # print문으로 출력 시 보여지는 부분
         return_str = f"I love a data : {self._data}\n" \
                     + f"I love a next node : {id(self._next)}"
         return return_str
         
-    def __repr__(self) -> str:
+    def __repr__(self) -> str: # 주피터 등으로 print구문 없이 보여지는 부분
         return_str = f"Node({self._data})\n"
         return return_str
             

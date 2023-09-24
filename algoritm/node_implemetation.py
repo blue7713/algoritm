@@ -24,6 +24,7 @@ node_list = []
 for a in range(1000):
     node_list.append(ds.Node(randint(1, 10000)))
 
+# link 연결 작업
 for idx in range(1, len(node_list)):
     node_list[idx -1] + node_list[idx]
 
